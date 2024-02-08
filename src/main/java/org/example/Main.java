@@ -52,6 +52,9 @@ public class Main {
             contadorDisparos=contadorDisparos+1;
             nivelVida=nivelVida+danoDisparo;
             System.out.println("te dispararon, tu vida quedo en:"+nivelVida);
+            if (contadorDisparos==3){
+              estaMuerto=true;
+            }
             if (nivelVida==0){
               estaMuerto=true;
               break;
